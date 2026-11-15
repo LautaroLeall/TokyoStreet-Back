@@ -1,0 +1,40 @@
+# Variables de entorno y credenciales
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# Claves privadas, certificados y tokens
+*.pem
+*.key
+*.cert
+service_role_key.txt
+service-account*.json
+
+# Supabase CLI y archivos temporales
+supabase/.temp/
+.branches/
+supabase/.temp
+.supabase/
+
+# Dependencias (si se usan paquetes auxiliares o Deno cache)
+node_modules/
+.deno/
+deno.lock
+
+# Logs y volcados de bases de datos
+*.log
+*.sql.dump
+*.dump
+*.tar.gz
+
+# Archivos de sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.sw?
